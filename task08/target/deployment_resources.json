@@ -25,11 +25,11 @@
       "invoke_mode" : "BUFFERED"
     }
   },
-  "open-meteo-weather-api" : {
-    "name" : "open-meteo-weather-api",
+  "c" : {
+    "name" : "c",
     "runtimes" : [ "java11" ],
     "resource_type" : "lambda_layer",
-    "deployment_package" : "open-meteo-weather-api-assembly.zip",
+    "deployment_package" : "c-assembly.zip",
     "libraries" : [ "layer/java/lib/weather-lambda-java-1.0-SNAPSHOT.jar" ],
     "architectures" : [ "arm64" ]
   }
