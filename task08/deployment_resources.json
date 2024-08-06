@@ -14,7 +14,14 @@
             "dynamodb:DeleteItem",
             "ssm:PutParameter",
             "ssm:GetParameter",
-            "kms:Decrypt"
+            "kms:Decrypt",
+            "iam:CreateRole",
+            "iam:AttachRolePolicy",
+            "iam:PutRolePolicy",
+            "iam:ListAttachedRolePolicies",
+            "iam:GetRole",
+            "iam:DeleteRole",
+            "iam:ListRoles"
           ],
           "Effect": "Allow",
           "Resource": "*"
