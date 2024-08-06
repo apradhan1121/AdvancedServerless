@@ -22,7 +22,7 @@ import java.util.Map;
 		isPublishVersion = false,
 		logsExpiration =  RetentionSetting.SYNDICATE_ALIASES_SPECIFIED
 )
-@LambdaLayer(layerName = "c",
+@LambdaLayer(layerName = "open-meteo-weather-api",
 		libraries = {"layer/java/lib/weather-lambda-java-1.0-SNAPSHOT.jar"},
 		runtime = DeploymentRuntime.JAVA11,
 		architectures = {Architecture.ARM64},
