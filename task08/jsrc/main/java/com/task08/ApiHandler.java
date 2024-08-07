@@ -71,7 +71,7 @@ import java.util.Map;
 
 @LambdaHandler(lambdaName = "api_handler",
 		roleName = "api_handler-role",
-//		layers = {"open-meteo-weather-api"},
+		layers = {"open-meteo-weather-api"},
 		isPublishVersion = false,
 		logsExpiration =  RetentionSetting.SYNDICATE_ALIASES_SPECIFIED
 )
