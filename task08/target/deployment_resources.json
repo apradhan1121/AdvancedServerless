@@ -2,9 +2,9 @@
   "api_handler" : {
     "name" : "api_handler",
     "lambda_path" : "C:\\Users\\abhijit_pradhan\\Desktop\\EPAM\\AWS_Sandbox\\Advanced Serverless Fundametals\\task08",
-    "version" : "1.0-SNAPSHOT",
+    "version" : "1.0.0",
     "func_name" : "com.task08.ApiHandler",
-    "deployment_package" : "weather-lambda-java-1.0-SNAPSHOT.jar",
+    "deployment_package" : "task08-1.0.0.jar",
     "resource_type" : "lambda",
     "runtime" : "java11",
     "architectures" : [ "x86_64" ],
@@ -17,7 +17,6 @@
     "event_sources" : [ ],
     "env_variables" : { },
     "publish_version" : false,
-    "layers" : [ "open-meteo-weather-api" ],
     "logs_expiration" : "${logs_expiration}",
     "snap_start" : "None",
     "url_config" : {
@@ -25,11 +24,11 @@
       "invoke_mode" : "BUFFERED"
     }
   },
-  "c" : {
-    "name" : "c",
+  "open-meteo-weather-api" : {
+    "name" : "open-meteo-weather-api",
     "runtimes" : [ "java11" ],
     "resource_type" : "lambda_layer",
-    "deployment_package" : "c-assembly.zip",
+    "deployment_package" : "open-meteo-weather-api-assembly.zip",
     "libraries" : [ "layer/java/lib/weather-lambda-java-1.0-SNAPSHOT.jar" ],
     "architectures" : [ "arm64" ]
   }
